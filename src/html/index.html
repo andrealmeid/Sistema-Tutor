@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Index</title>
+        <meta charset="utf-8">
+        <script src="../js/database.js"></script>
+        <script src="../js/quiz_engine.js"></script>
+        <link rel="stylesheet" type="text/css" href="../css/style.css" media="all">
+    </head>
+
+<body onload="begin()">
+    <h3 id="question_text">
+        question
+    </h3>
+
+    <div id="media_div">
+
+    </div>
+
+    <table class="answer_list">
+        <tr><td>
+            <button class="answer_button" id="answer0" onclick="selectAnswer(0)">
+                answer
+            </button>
+        </tr></td>
+        <tr><td>
+            <button class="answer_button" id="answer1" onclick="selectAnswer(1)">
+                answer
+            </button>
+        </tr></td>
+        <tr><td>
+            <button class="answer_button" id="answer2" onclick="selectAnswer(2)">
+                answer
+            </button>
+        </tr></td>
+        <tr><td>
+            <button class="answer_button" id="answer3" onclick="selectAnswer(3)">
+                answer
+            </button>
+        </tr></td>
+        <tr><td>
+            <button class="control_button" onclick="setQuestion(getNextQuestion(clickedAnswer))">
+                Próxima
+            </button>
+        </tr></td>
+    </table>
+
+</body>
+
+</html>
